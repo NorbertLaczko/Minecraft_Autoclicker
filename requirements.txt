@@ -1,0 +1,4 @@
+logging
+pynput
+coloredlogs
+pyfiglet
