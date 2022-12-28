@@ -19,12 +19,6 @@ class autoclicker:
     pause = Key.f10
     stop = Key.f11
 
-    if start == key:
-        logging.info('Autoclicker: On')
-    elif pause == key:
-        logging.info('Autoclicker: Off')
-
-
     def menu(self):
         figlet = pyfiglet.figlet_format('AUTOCLICKER')
         logging.warning(f'{figlet}')
@@ -35,9 +29,6 @@ class autoclicker:
 
     def on_press(self, key):
         self.key = key
-
-    def pause_1(self):
-            pass
 
     def start_listening(self):
         listener = keyboard.Listener(on_press=self.on_press)
