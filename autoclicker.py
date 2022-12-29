@@ -61,9 +61,9 @@ class autoclicker:
                         logging.error('Autoclicker: OFF')
 
 
-
-click = autoclicker()
-click.start_listening()
+if __name__ == '__main__':
+    click = autoclicker()
+    click.start_listening()
 
 
 
