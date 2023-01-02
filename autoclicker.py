@@ -41,6 +41,7 @@ class autoclicker:
         while True:
 
             while True:
+                time.sleep(0.01)
 
                 if self.key == self.stop:
                     exit()
